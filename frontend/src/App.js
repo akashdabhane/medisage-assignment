@@ -29,7 +29,7 @@ function App() {
   }
 
   socket.on('receive_title_click', (data) => {
-    console.log('title clicked', data);
+    console.log('clicked title no.', data);
   })
 
   return (

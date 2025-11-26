@@ -38,9 +38,9 @@ function App() {
       <div className='container'>
         {
           data.map((item, index) => (
-            <div key={index} className='title' onClick={() => handleTitleClick(item)}>
-              <span>{item.id}</span>
-              <span>{item.title}</span>
+            <div key={index} className='card' onClick={() => handleTitleClick(item)}>
+              <div className='card-id'>{item.id}</div>
+              <div className='card-title'>{item.title}</div>
             </div>
           ))
         }

@@ -25,11 +25,11 @@ function App() {
 
   const handleTitleClick = (item) => {
     socket.emit('title_click', item.id);
+    alert("Message broadcasted check the console")
   }
 
   socket.on('receive_title_click', (data) => {
     console.log('title clicked', data);
-    // alert(`title clicked ${data}`);
   })
 
   return (
